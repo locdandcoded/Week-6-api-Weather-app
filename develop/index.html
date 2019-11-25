@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <nav id="title" class="navbar-center">
+            <span class="navbar-text">
+                <h2>Weather Dashboard</h2>
+            </span>
+            </nav>
+    </div>
+
+    <div class="container">
+            
+        <div class="row">
+            <div class="mt-5 col-lg-4">            
+                <input type="text" placeholder="City"><button type="button" class="query_btn btn btn-default btn-sm">🔍</button><br>            
+                    <div id="cities">
+                        <!-- append into this div searched cities -->
+                    </div>            
+            </div>       
+            <div class="mt-5 col-lg-8">
+                 <!-- need city and date below -->
+                <h2>City: <span id="city"></span></h2>                    
+                <!-- need temp with f at in below -->
+                <p>Temperature: <span id="temperature"></span></p>
+                <!-- need humidity in percentage below -->
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Description: <span id="description_weather"></span></p>
+                <img id="weather_image" src="">
+                <!-- need wind speed in mph below -->
+
+                <!-- need uv index below -->
+            </div>             
+        </div>
+        <div class="mt-5 float-right"><strong>5-Day Forecast:</strong>
+        <div class="row">
+            <div class="col-lg-2">
+                    <div class="card bg-primary" style="width: 10rem;">
+                            <div class="card-body">
+                              <p class="card-title">Date</p>
+                              <p class="card-subtitle mb-2 text-muted">weather image</p>
+                              <p class="card-text">temp in f</p>
+                              <p class="card-text">humidity in percentage</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-lg-2">
+                    <div class="card bg-primary" style="width: 10rem;">
+                            <div class="card-body">
+                              <p class="card-title">Date</p>
+                              <p class="card-subtitle mb-2 text-muted">weather image</p>
+                              <p class="card-text">temp in f</p>
+                              <p class="card-text">humidity in percentage</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-lg-2">
+                    <div class="card bg-primary" style="width: 10rem;">
+                            <div class="card-body">
+                              <p class="card-title">Date</p>
+                              <p class="card-subtitle mb-2 text-muted">weather image</p>
+                              <p class="card-text">temp in f</p>
+                              <p class="card-text">humidity in percentage</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-lg-2">
+                    <div class="card bg-primary" style="width: 10rem;">
+                            <div class="card-body">
+                              <p class="card-title">Date</p>
+                              <p class="card-subtitle mb-2 text-muted">weather image</p>
+                              <p class="card-text">temp in f</p>
+                              <p class="card-text">humidity in percentage</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-lg-2">
+                    <div class="card bg-primary" style="width: 10rem;">
+                            <div class="card-body">
+                              <p class="card-title">Date</p>
+                              <p class="card-subtitle mb-2 text-muted">weather image</p>
+                              <p class="card-text">temp in f</p>
+                              <p class="card-text">humidity in percentage</p>
+                            </div>
+                          </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src=script.js></script>  
+</body>
+</html>
