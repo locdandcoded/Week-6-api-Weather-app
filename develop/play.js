@@ -27,9 +27,9 @@
 //function to add to city display (takes city as argument)
   //cerate a link for that city and add it to the city display
   
-
   
-  $(document).ready(function(){
+
+$(document).ready(function(){
 
     $("#search").click(function(){
 
@@ -37,7 +37,7 @@
         var urlForcast = "http://api.openweathermap.org/data/2.5/forecast?q="
         var imperial = "&units=imperial";
         var appID = "&APPID=7cb3430e6541ef0dad49a08bbfdee96c";    
-        
+        var queryURL = urlForcast + city + imperial + appID;
     
         if(city != ""){
 
@@ -94,57 +94,5 @@
         }
 
     });
-    var cityArray = JSON.parse(localStorage.getItem("cities")) || []
 
-
-
-
-    //adding a new city adds it to the array and runs the search function
-    $("#search").click(function() {
-    
-       
-        event.preventDefault();
-    
-        var city = $("#city-name").val().trim();
-    
-        cityClick(city);
-        addButton(city);
-    
-        cityArray.push(city);
-    
-        localStorage.setItem("cities", JSON.stringify(cityArray));
-    
-    })
-    
-    //clicking on a city also runs the click function
-    //we used document instead of the class because it was dynamically created,
-    //so we have nothing to "hook" into when the page first loads
-    $(document).on("click", ".city-button", function(){
-        //retreive the city
-        var clickedCity = $(this).data("city");
-    
-        cityClick(clickedCity)
-    
-    })
-    
-    //this is the function that runs when you add a new city or click a button
-    function cityClick(city) {
-        console.log(city)
-    }
-    
-    //this is the function for creating a new button
-    function addButton(city) {
-    
-        var $btn = $("<button>")
-            .addClass("city-button")
-            .text(city)
-            .attr("data-city", city)
-    
-        $("#buttons").append($btn)
-    }
-    
-    //create buttons for anything already in localstorage when the page loads
-    for (var i = 0; i < cityArray.length; i++) {
-        addButton(cityArray[i])
-    }
 });

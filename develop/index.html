@@ -21,10 +21,11 @@
             
         <div class="row">
             <div class="mt-5 col-lg-4">            
-                <input type="text" placeholder="City"><button type="button" class="query_btn btn btn-default btn-sm">🔍</button><br>            
+                <input id="city-name" type="text" placeholder="City"><button id="search" value="submit" type="button" class="query_btn btn btn-default btn-sm">🔍</button><br>            
                     <div id="cities">
                         <!-- append into this div searched cities -->
-                    </div>            
+                    </div> 
+                    <div id="buttons"></div>           
             </div>       
             <div class="mt-5 col-lg-8">
                  <!-- need city and date below -->
@@ -33,65 +34,73 @@
                 <p>Temperature: <span id="temperature"></span></p>
                 <!-- need humidity in percentage below -->
                 <p>Humidity: <span id="humidity"></span></p>
+                <!-- need wind speed in mph below -->
+                <p>Wind Speed: <span id="wind_speed"></span></p>
                 <p>Description: <span id="description_weather"></span></p>
                 <img id="weather_image" src="">
-                <!-- need wind speed in mph below -->
+                
+
 
                 <!-- need uv index below -->
-            </div>             
+                <!-- <p>list.weather.id <span id="weather_main"></span></p> -->
+           
+           
+           
+              </div>             
         </div>
         <div class="mt-5 float-right"><strong>5-Day Forecast:</strong>
         <div class="row">
             <div class="col-lg-2">
                     <div class="card bg-primary" style="width: 10rem;">
                             <div class="card-body">
-                              <p class="card-title">Date</p>
-                              <p class="card-subtitle mb-2 text-muted">weather image</p>
-                              <p class="card-text">temp in f</p>
-                              <p class="card-text">humidity in percentage</p>
-                            </div>
+                              <p>Date: <span id="date_1"></span></p>
+                              <img id="weather_image1" src=""> 
+                              <p>Temperature: <span id="temperature1"></span></p> 
+                              <p>Humidity: <span id="humidity1"></span></p>                         
+                              </div>
                           </div>
             </div>
             <div class="col-lg-2">
-                    <div class="card bg-primary" style="width: 10rem;">
-                            <div class="card-body">
-                              <p class="card-title">Date</p>
-                              <p class="card-subtitle mb-2 text-muted">weather image</p>
-                              <p class="card-text">temp in f</p>
-                              <p class="card-text">humidity in percentage</p>
-                            </div>
-                          </div>
+              <div class="card bg-primary" style="width: 10rem;">
+                      <div class="card-body">
+                        <p>Date: <span id="date_2"></span></p>
+                        <img id="weather_image2" src=""> 
+                        <p>Temperature: <span id="temperature2"></span></p> 
+                        <p>Humidity: <span id="humidity2"></span></p>                         
+                        </div>
+                    </div>
             </div>
             <div class="col-lg-2">
-                    <div class="card bg-primary" style="width: 10rem;">
-                            <div class="card-body">
-                              <p class="card-title">Date</p>
-                              <p class="card-subtitle mb-2 text-muted">weather image</p>
-                              <p class="card-text">temp in f</p>
-                              <p class="card-text">humidity in percentage</p>
-                            </div>
-                          </div>
-            </div>
-            <div class="col-lg-2">
-                    <div class="card bg-primary" style="width: 10rem;">
-                            <div class="card-body">
-                              <p class="card-title">Date</p>
-                              <p class="card-subtitle mb-2 text-muted">weather image</p>
-                              <p class="card-text">temp in f</p>
-                              <p class="card-text">humidity in percentage</p>
-                            </div>
-                          </div>
-            </div>
-            <div class="col-lg-2">
-                    <div class="card bg-primary" style="width: 10rem;">
-                            <div class="card-body">
-                              <p class="card-title">Date</p>
-                              <p class="card-subtitle mb-2 text-muted">weather image</p>
-                              <p class="card-text">temp in f</p>
-                              <p class="card-text">humidity in percentage</p>
-                            </div>
-                          </div>
-            </div>
+              <div class="card bg-primary" style="width: 10rem;">
+                      <div class="card-body">
+                        <p>Date: <span id="date_3"></span></p>
+                        <img id="weather_image3" src=""> 
+                        <p>Temperature: <span id="temperature3"></span></p> 
+                        <p>Humidity: <span id="humidity3"></span></p>                         
+                        </div>
+                    </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card bg-primary" style="width: 10rem;">
+                    <div class="card-body">
+                      <p>Date: <span id="date_4"></span></p>
+                      <img id="weather_image4" src=""> 
+                      <p>Temperature: <span id="temperature4"></span></p> 
+                      <p>Humidity: <span id="humidity4"></span></p>                         
+                      </div>
+                  </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="card bg-primary" style="width: 10rem;">
+                    <div class="card-body">
+                      <p>Date: <span id="date_5"></span></p>
+                      <img id="weather_image5" src=""> 
+                      <p>Temperature: <span id="temperature5"></span></p> 
+                      <p>Humidity: <span id="humidity5"></span></p>                         
+                      </div>
+                  </div>
+          </div>
+            
         </div>
     </div>
 </div><br>
